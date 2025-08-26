@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>44 Glamping - Cabin Fact Sheets</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { text-align: center; background: linear-gradient(135deg, #2c5530, #4a7c59); color: white; padding: 30px; border-radius: 15px; margin-bottom: 30px; }
+        .header h1 { margin: 0; font-size: 2.5em; }
+        .header p { margin: 10px 0 0 0; font-size: 1.2em; opacity: 0.9; }
+        .fact-sheet { background: white; border-radius: 15px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); page-break-inside: avoid; }
+        .cabin-header { background: linear-gradient(135deg, #4a7c59, #6b9c7a); color: white; padding: 20px; border-radius: 10px; margin: -25px -25px 20px -25px; }
+        .cabin-title { font-size: 1.8em; margin: 0; }
+        .cabin-subtitle { margin: 5px 0 0 0; opacity: 0.9; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 25px; }
+        .metric-card { background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #4a7c59; }
+        .metric-value { font-size: 1.5em; font-weight: bold; color: #2c5530; margin-bottom: 5px; }
+        .metric-label { color: #666; font-size: 0.9em; text-transform: uppercase; letter-spacing: 0.5px; }
+        .maintenance-section { background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 10px; padding: 20px; margin-top: 20px; }
+        .maintenance-title { color: #856404; font-size: 1.2em; margin-bottom: 15px; font-weight: bold; }
+        .maintenance-list { list-style: none; padding: 0; margin: 0; }
+        .maintenance-list li { background: white; margin: 8px 0; padding: 12px; border-radius: 8px; border-left: 3px solid #ffc107; }
+        .priority-high { border-left-color: #dc3545; }
+        .priority-medium { border-left-color: #ffc107; }
+        .priority-low { border-left-color: #28a745; }
+        .print-button { position: fixed; top: 20px; right: 20px; background: #4a7c59; color: white; border: none; padding: 12px 24px; border-radius: 25px; cursor: pointer; font-size: 16px; }
+        .print-button:hover { background: #2c5530; }
+        @media print { .print-button { display: none; } .fact-sheet { page-break-inside: avoid; } }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()">🖨️ Print All</button>
+    
+    <div class="container">
+        <div class="header">
+            <h1>44 Glamping Resort</h1>
+            <p>Cabin Performance & Maintenance Fact Sheets</p>
+            <p>Comprehensive Overview of All Cabins</p>
+        </div>
+
+        <!-- Cabin 1 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 1</h2>
+                <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$14,055</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$147.95</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$147.95</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Sencilla</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-medium">Maintenance needed on deck, floor, and shower</li>
+                    <li class="priority-high">Replace tent - candidate for bathtub upgrade</li>
+                    <li class="priority-medium">Replace table and chairs</li>
+                    <li class="priority-low">Add outdoor plants</li>
+                    <li class="priority-medium">Missing table and chairs in back area</li>
+                    <li class="priority-low">Add umbrella</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 2 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 2</h2>
+                <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$22,271</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$214.14</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$214.14</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Sencilla</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-high">Currently Occupied</li>
+                    <li class="priority-medium">Candidate for bathtub upgrade when available</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 3 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 3</h2>
+                <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$20,600</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$163.49</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$163.49</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Sencilla</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-medium">Maintenance needed on furniture and exterior deck</li>
+                    <li class="priority-medium">Maintenance needed on lower part of textile entrance</li>
+                    <li class="priority-medium">Maintenance needed on shower wood</li>
+                    <li class="priority-low">Plants are in good condition</li>
+                    <li class="priority-low">Add interior plant</li>
+                    <li class="priority-low">Add paintings</li>
+                    <li class="priority-low">Add umbrella</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 4 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 4</h2>
+                <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$22,718</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$178.88</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$178.88</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Sencilla</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-medium">Maintenance needed on exterior deck and furniture</li>
+                    <li class="priority-low">Entrance textile zipper in good condition</li>
+                    <li class="priority-low">Center table is good</li>
+                    <li class="priority-medium">Consider adding wheels to minibar</li>
+                    <li class="priority-high">Remove small steel furniture</li>
+                    <li class="priority-low">Plants in good condition</li>
+                    <li class="priority-medium">Maintenance needed on table</li>
+                    <li class="priority-medium">Maintenance needed on shower and exterior woods</li>
+                    <li class="priority-low">Add umbrella</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 5 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 5</h2>
+                <p class="cabin-subtitle">Sencilla</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$19,109</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$189.20</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$189.20</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Sencilla</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-high">Currently Occupied</li>
+                    <li class="priority-low">Add umbrella</li>
+                    <li class="priority-medium">Maintenance needed on deck</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 6 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 6</h2>
+                <p class="cabin-subtitle">Sencilla</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$27,918</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$200.85</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$200.85</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Sencilla</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-high">Currently Occupied</li>
+                    <li class="priority-low">Add umbrella</li>
+                    <li class="priority-medium">Maintenance needed on deck</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 7 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 7</h2>
+                <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$17,640</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$185.68</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$185.68</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Sencilla</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-low">Deck and floor in good condition</li>
+                    <li class="priority-low">Painting is good</li>
+                    <li class="priority-medium">Change entrance textile</li>
+                    <li class="priority-high">Remove steel furniture</li>
+                    <li class="priority-low">Wood in good condition</li>
+                    <li class="priority-low">Tent in good condition</li>
+                    <li class="priority-medium">Missing lamp</li>
+                    <li class="priority-medium">Color matching needed for furniture</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 8 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 8</h2>
+                <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$14,606</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$192.19</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$192.19</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Sencilla</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-medium">Exterior furniture needs maintenance</li>
+                    <li class="priority-low">Deck in good condition</li>
+                    <li class="priority-low">Textile in good condition</li>
+                    <li class="priority-low">Floor in good condition</li>
+                    <li class="priority-medium">Color matching needed</li>
+                    <li class="priority-high">Remove steel furniture</li>
+                    <li class="priority-medium">Maintenance needed on small chairs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 9 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 9</h2>
+                <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$18,625</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$118.63</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$118.63</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Sencilla</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-high">Drainage odor in exterior</li>
+                    <li class="priority-medium">Maintenance needed on deck and exterior furniture</li>
+                    <li class="priority-medium">Entrance textile maintenance</li>
+                    <li class="priority-medium">Maintenance needed on floor and showers</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 10 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 10</h2>
+                <p class="cabin-subtitle">Sencilla</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$11,001</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$69.19</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$69.19</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Sencilla</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-high">Currently Occupied</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 11 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 11</h2>
+                <p class="cabin-subtitle">Sencilla</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$22,630</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$198.51</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$198.51</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Sencilla</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-medium">Light rocking chairs, desk, stool - different style from king bed</li>
+                    <li class="priority-low">Tent in general good condition</li>
+                    <li class="priority-medium">General floor maintenance needed</li>
+                    <li class="priority-low">Sink in decent condition</li>
+                    <li class="priority-low">Plants in good condition</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 12 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 12</h2>
+                <p class="cabin-subtitle">Doble</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$27,375</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$201.29</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$201.29</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Doble</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-medium">Maintenance needed on deck and furniture</li>
+                    <li class="priority-medium">Tent maintenance needed</li>
+                    <li class="priority-medium">Maintenance needed on shower, bathroom, and sink woods</li>
+                    <li class="priority-low">Bathroom door is good</li>
+                    <li class="priority-high">Broken door</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 13 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 13</h2>
+                <p class="cabin-subtitle">Doble</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$17,765</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$179.44</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$179.44</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Doble</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-medium">Double cabin - general maintenance needed</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 14 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 14</h2>
+                <p class="cabin-subtitle">Doble - Movilidad</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$16,307</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$139.38</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$139.38</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Doble</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-medium">Maintenance needed on entire floor</li>
+                    <li class="priority-medium">Uneven furniture</li>
+                    <li class="priority-medium">Bathroom doors good but need maintenance</li>
+                    <li class="priority-medium">Plants and shower floor maintenance</li>
+                    <li class="priority-medium">Sink wood maintenance</li>
+                    <li class="priority-low">Tree on one side</li>
+                    <li class="priority-medium">Decoration needed</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 15 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 15</h2>
+                <p class="cabin-subtitle">Doble</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$21,214</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$210.04</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$210.04</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Doble</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-medium">Exterior deck furniture maintenance - good condition</li>
+                    <li class="priority-medium">Maintenance needed on entire cabin floor</li>
+                    <li class="priority-high">Tent entrance needs replacement</li>
+                    <li class="priority-medium">Plant maintenance</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 16 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 16</h2>
+                <p class="cabin-subtitle">Doble</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$24,913</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$254.21</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$254.21</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Doble</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-low">Add flower pots for view</li>
+                    <li class="priority-high">Glass door stuck</li>
+                    <li class="priority-medium">Maintenance needed on shower and sink woods</li>
+                    <li class="priority-medium">Exterior deck maintenance - exterior tables</li>
+                    <li class="priority-low">Add umbrella</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 17 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 17</h2>
+                <p class="cabin-subtitle">Doble</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$10,313</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$229.18</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$229.18</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Doble</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-medium">Zipper maintenance</li>
+                    <li class="priority-medium">Exterior deck maintenance - tables and furniture</li>
+                    <li class="priority-medium">Bathroom door maintenance</li>
+                    <li class="priority-low">Add plants on sides</li>
+                    <li class="priority-medium">Maintenance needed on shower and sink woods</li>
+                    <li class="priority-medium">Bathroom door maintenance</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cabin 19 -->
+        <div class="fact-sheet">
+            <div class="cabin-header">
+                <h2 class="cabin-title">Cabin 19</h2>
+                <p class="cabin-subtitle">Spa</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$0</div>
+                    <div class="metric-label">Total Revenue (USD)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$0</div>
+                    <div class="metric-label">ADR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$0</div>
+                    <div class="metric-label">RevPAR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Spa</div>
+                    <div class="metric-label">Cabin Type</div>
+                </div>
+            </div>
+
+            <div class="maintenance-section">
+                <h3 class="maintenance-title">🔧 Maintenance Issues & Recommendations</h3>
+                <ul class="maintenance-list">
+                    <li class="priority-medium">Maintenance needed on shower wood</li>
+                    <li class="priority-low">Add plants</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding: 20px; background: #e9ecef; border-radius: 10px;">
+            <h3>📊 Summary Statistics</h3>
+            <p><strong>Total Cabins Analyzed:</strong> 19 | <strong>Revenue Range:</strong> $0 - $27,918 | <strong>ADR Range:</strong> $0 - $254.21</p>
+            <p><strong>Top Performers:</strong> Cabin 6 ($27,918), Cabin 12 ($27,375), Cabin 16 ($24,913)</p>
+            <p><strong>Priority Upgrades:</strong> Cabins 1, 3, 4, 7, 8, 9 (Candidatas Tina)</p>
+        </div>
+    </div>
+
+    <script>
+        // Add any interactive functionality here if needed
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Glamping Fact Sheets loaded successfully');
+        });
+    </script>
+</body>
+</html>

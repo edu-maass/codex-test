@@ -1,19 +1,19 @@
-Cabin,Type,Total_Revenue_USD,ADR,RevPAR,Status,Priority_Upgrade
-1,Sencilla,14055.20,147.95,147.95,Available,Candidata Tina
-2,Sencilla,22270.90,214.14,214.14,Occupied,Candidata Tina
-3,Sencilla,20599.83,163.49,163.49,Available,Candidata Tina
-4,Sencilla,22718.36,178.88,178.88,Available,Candidata Tina
-5,Sencilla,19109.26,189.20,189.20,Occupied,Standard
-6,Sencilla,27918.36,200.85,200.85,Occupied,Standard
-7,Sencilla,17639.70,185.68,185.68,Available,Candidata Tina
-8,Sencilla,14606.16,192.19,192.19,Available,Candidata Tina
-9,Sencilla,18624.79,118.63,118.63,Available,Candidata Tina
-10,Sencilla,11000.87,69.19,69.19,Occupied,Standard
-11,Sencilla,22630.05,198.51,198.51,Available,Standard
-12,Doble,27375.36,201.29,201.29,Available,Standard
-13,Doble,17764.81,179.44,179.44,Available,Standard
-14,Doble,16307.04,139.38,139.38,Available,Movilidad
-15,Doble,21214.22,210.04,210.04,Available,Standard
-16,Doble,24912.59,254.21,254.21,Available,Standard
-17,Doble,10313.08,229.18,229.18,Available,Standard
-19,Spa,0.00,0.00,0.00,Available,Special
+Cabin,Type,2024_Revenue_USD,2025_Revenue_USD,Total_Revenue_USD,ADR,RevPAR,Status,Priority_Upgrade
+1,Sencilla,10809.19,3246.01,14055.20,147.95,147.95,Available,Candidata Tina
+2,Sencilla,19713.12,2557.78,22270.90,214.14,214.14,Occupied,Candidata Tina
+3,Sencilla,16373.50,4226.33,20599.83,163.49,163.49,Available,Candidata Tina
+4,Sencilla,17855.61,4862.75,22718.36,178.88,178.88,Available,Candidata Tina
+5,Sencilla,15421.64,3687.62,19109.26,189.20,189.20,Occupied,Standard
+6,Sencilla,20456.56,7461.80,27918.36,200.85,200.85,Occupied,Standard
+7,Sencilla,14201.37,3438.33,17639.70,185.68,185.68,Available,Candidata Tina
+8,Sencilla,12300.56,2305.60,14606.16,192.19,192.19,Available,Candidata Tina
+9,Sencilla,16511.95,2112.84,18624.79,118.63,118.63,Available,Candidata Tina
+10,Sencilla,10517.50,483.37,11000.87,69.19,69.19,Occupied,Standard
+11,Sencilla,16096.17,6533.88,22630.05,198.51,198.51,Available,Standard
+12,Doble,22129.66,5245.70,27375.36,201.29,201.29,Available,Standard
+13,Doble,14368.24,3396.57,17764.81,179.44,179.44,Available,Standard
+14,Doble,12282.20,4024.84,16307.04,139.38,139.38,Available,Movilidad
+15,Doble,15449.46,5764.76,21214.22,210.04,210.04,Available,Standard
+16,Doble,16720.88,8191.71,24912.59,254.21,254.21,Available,Standard
+17,Doble,8338.22,1974.86,10313.08,229.18,229.18,Available,Standard
+19,Spa,0.00,0.00,0.00,0.00,0.00,Available,Special

@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>44 Glamping - Cabin Fact Sheets</title>
+    <title>44 Glamping - Cabañas Fact Sheets</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background: #f5f5f5; }
         .container { max-width: 1200px; margin: 0 auto; }
-        .header { text-align: center; background: linear-gradient(135deg, #2c5530, #4a7c59); color: white; padding: 30px; border-radius: 15px; margin-bottom: 30px; }
+        .header { text-align: center; background: linear-gradient(135deg, #8B4513, #A0522D); color: white; padding: 30px; border-radius: 15px; margin-bottom: 30px; }
         .header h1 { margin: 0; font-size: 2.5em; }
         .header p { margin: 10px 0 0 0; font-size: 1.2em; opacity: 0.9; }
+        .chart-container { background: white; border-radius: 15px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .fact-sheet { background: white; border-radius: 15px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); page-break-inside: avoid; }
-        .cabin-header { background: linear-gradient(135deg, #4a7c59, #6b9c7a); color: white; padding: 20px; border-radius: 10px; margin: -25px -25px 20px -25px; }
+        .cabin-header { background: linear-gradient(135deg, #A0522D, #CD853F); color: white; padding: 20px; border-radius: 10px; margin: -25px -25px 20px -25px; }
         .cabin-title { font-size: 1.8em; margin: 0; }
         .cabin-subtitle { margin: 5px 0 0 0; opacity: 0.9; }
         .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 25px; }
-        .metric-card { background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #4a7c59; }
-        .metric-value { font-size: 1.5em; font-weight: bold; color: #2c5530; margin-bottom: 5px; }
+        .metric-card { background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #A0522D; }
+        .metric-value { font-size: 1.5em; font-weight: bold; color: #8B4513; margin-bottom: 5px; }
         .metric-label { color: #666; font-size: 0.9em; text-transform: uppercase; letter-spacing: 0.5px; }
         .maintenance-photos-container { display: flex; gap: 20px; margin-top: 20px; }
-        .maintenance-section { background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 10px; padding: 20px; flex: 1; }
-        .photos-section { background: #f8f9fa; border: 2px dashed #4a7c59; border-radius: 10px; padding: 20px; flex: 1; text-align: center; }
+        .maintenance-section { background: #FDF5E6; border: 1px solid #DEB887; border-radius: 10px; padding: 20px; flex: 1; }
+        .photos-section { background: #f8f9fa; border: 2px dashed #A0522D; border-radius: 10px; padding: 20px; flex: 1; text-align: center; }
         .photos-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 15px; }
-        .photo-placeholder { background: white; border: 1px solid #dee2e6; border-radius: 8px; padding: 30px; min-height: 150px; display: flex; align-items: center; justify-content: center; color: #6c757d; font-style: italic; }
-        .photo-placeholder:hover { border-color: #4a7c59; background: #f8f9fa; }
-        .maintenance-section { background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 10px; padding: 20px; margin-top: 20px; }
-        .maintenance-title { color: #856404; font-size: 1.2em; margin-bottom: 15px; font-weight: bold; }
+        .photo-placeholder { background: white; border: 1px solid #DEB887; border-radius: 8px; padding: 30px; min-height: 150px; display: flex; align-items: center; justify-content: center; color: #8B4513; font-style: italic; }
+        .photo-placeholder:hover { border-color: #A0522D; background: #FDF5E6; }
+        .maintenance-title { color: #8B4513; font-size: 1.2em; margin-bottom: 15px; font-weight: bold; }
         .maintenance-list { list-style: none; padding: 0; margin: 0; }
-        .maintenance-list li { background: white; margin: 8px 0; padding: 12px; border-radius: 8px; border-left: 3px solid #ffc107; }
-        .priority-high { border-left-color: #dc3545; }
-        .priority-medium { border-left-color: #ffc107; }
-        .priority-low { border-left-color: #28a745; }
-        .print-button { position: fixed; top: 20px; right: 20px; background: #4a7c59; color: white; border: none; padding: 12px 24px; border-radius: 25px; cursor: pointer; font-size: 16px; }
-        .print-button:hover { background: #2c5530; }
+        .maintenance-list li { background: white; margin: 8px 0; padding: 12px; border-radius: 8px; border-left: 3px solid #DAA520; }
+        .priority-high { border-left-color: #CD5C5C; }
+        .priority-medium { border-left-color: #DAA520; }
+        .priority-low { border-left-color: #9ACD32; }
+        .print-button { position: fixed; top: 20px; right: 20px; background: #A0522D; color: white; border: none; padding: 12px 24px; border-radius: 25px; cursor: pointer; font-size: 16px; }
+        .print-button:hover { background: #8B4513; }
         @media print { .print-button { display: none; } .fact-sheet { page-break-inside: avoid; } }
     </style>
 </head>
@@ -46,10 +46,15 @@
             <p>Visión General Integral de Todas las Cabañas</p>
         </div>
 
-        <!-- Cabin 1 -->
+        <!-- Gráfica de Revenue 2024 -->
+        <div class="chart-container">
+            <canvas id="revenueChart"></canvas>
+        </div>
+
+        <!-- Cabaña 1 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 1</h2>
+                <h2 class="cabin-title">Cabaña 1</h2>
                 <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
             </div>
             
@@ -97,10 +102,10 @@
             </div>
         </div>
 
-        <!-- Cabin 2 -->
+        <!-- Cabaña 2 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 2</h2>
+                <h2 class="cabin-title">Cabaña 2</h2>
                 <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
             </div>
             
@@ -144,10 +149,10 @@
             </div>
         </div>
 
-        <!-- Cabin 3 -->
+        <!-- Cabaña 3 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 3</h2>
+                <h2 class="cabin-title">Cabaña 3</h2>
                 <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
             </div>
             
@@ -196,10 +201,10 @@
             </div>
         </div>
 
-        <!-- Cabin 4 -->
+        <!-- Cabaña 4 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 4</h2>
+                <h2 class="cabin-title">Cabaña 4</h2>
                 <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
             </div>
             
@@ -250,10 +255,10 @@
             </div>
         </div>
 
-        <!-- Cabin 5 -->
+        <!-- Cabaña 5 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 5</h2>
+                <h2 class="cabin-title">Cabaña 5</h2>
                 <p class="cabin-subtitle">Sencilla</p>
             </div>
             
@@ -298,10 +303,10 @@
             </div>
         </div>
 
-        <!-- Cabin 6 -->
+        <!-- Cabaña 6 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 6</h2>
+                <h2 class="cabin-title">Cabaña 6</h2>
                 <p class="cabin-subtitle">Sencilla</p>
             </div>
             
@@ -346,10 +351,10 @@
             </div>
         </div>
 
-        <!-- Cabin 7 -->
+        <!-- Cabaña 7 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 7</h2>
+                <h2 class="cabin-title">Cabaña 7</h2>
                 <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
             </div>
             
@@ -399,10 +404,10 @@
             </div>
         </div>
 
-        <!-- Cabin 8 -->
+        <!-- Cabaña 8 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 8</h2>
+                <h2 class="cabin-title">Cabaña 8</h2>
                 <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
             </div>
             
@@ -451,10 +456,10 @@
             </div>
         </div>
 
-        <!-- Cabin 9 -->
+        <!-- Cabaña 9 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 9</h2>
+                <h2 class="cabin-title">Cabaña 9</h2>
                 <p class="cabin-subtitle">Sencilla - Candidata Tina</p>
             </div>
             
@@ -500,10 +505,10 @@
             </div>
         </div>
 
-        <!-- Cabin 10 -->
+        <!-- Cabaña 10 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 10</h2>
+                <h2 class="cabin-title">Cabaña 10</h2>
                 <p class="cabin-subtitle">Sencilla</p>
             </div>
             
@@ -546,10 +551,10 @@
             </div>
         </div>
 
-        <!-- Cabin 11 -->
+        <!-- Cabaña 11 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 11</h2>
+                <h2 class="cabin-title">Cabaña 11</h2>
                 <p class="cabin-subtitle">Sencilla</p>
             </div>
             
@@ -596,10 +601,10 @@
             </div>
         </div>
 
-        <!-- Cabin 12 -->
+        <!-- Cabaña 12 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 12</h2>
+                <h2 class="cabin-title">Cabaña 12</h2>
                 <p class="cabin-subtitle">Doble</p>
             </div>
             
@@ -646,10 +651,10 @@
             </div>
         </div>
 
-        <!-- Cabin 13 -->
+        <!-- Cabaña 13 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 13</h2>
+                <h2 class="cabin-title">Cabaña 13</h2>
                 <p class="cabin-subtitle">Doble</p>
             </div>
             
@@ -692,10 +697,10 @@
             </div>
         </div>
 
-        <!-- Cabin 14 -->
+        <!-- Cabaña 14 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 14</h2>
+                <h2 class="cabin-title">Cabaña 14</h2>
                 <p class="cabin-subtitle">Doble - Movilidad</p>
             </div>
             
@@ -744,10 +749,10 @@
             </div>
         </div>
 
-        <!-- Cabin 15 -->
+        <!-- Cabaña 15 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 15</h2>
+                <h2 class="cabin-title">Cabaña 15</h2>
                 <p class="cabin-subtitle">Doble</p>
             </div>
             
@@ -793,10 +798,10 @@
             </div>
         </div>
 
-        <!-- Cabin 16 -->
+        <!-- Cabaña 16 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 16</h2>
+                <h2 class="cabin-title">Cabaña 16</h2>
                 <p class="cabin-subtitle">Doble</p>
             </div>
             
@@ -843,10 +848,10 @@
             </div>
         </div>
 
-        <!-- Cabin 17 -->
+        <!-- Cabaña 17 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 17</h2>
+                <h2 class="cabin-title">Cabaña 17</h2>
                 <p class="cabin-subtitle">Doble</p>
             </div>
             
@@ -894,10 +899,10 @@
             </div>
         </div>
 
-        <!-- Cabin 19 -->
+        <!-- Cabaña 19 -->
         <div class="fact-sheet">
             <div class="cabin-header">
-                <h2 class="cabin-title">Cabin 19</h2>
+                <h2 class="cabin-title">Cabaña 19</h2>
                 <p class="cabin-subtitle">Spa</p>
             </div>
             
@@ -951,10 +956,92 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        // Add any interactive functionality here if needed
         document.addEventListener('DOMContentLoaded', function() {
             console.log('Glamping Fact Sheets loaded successfully');
+            
+            // Datos para la gráfica de barras
+            const cabinData = {
+                labels: ['Cabaña 1', 'Cabaña 2', 'Cabaña 3', 'Cabaña 4', 'Cabaña 5', 'Cabaña 6', 'Cabaña 7', 'Cabaña 8', 'Cabaña 9', 'Cabaña 10', 'Cabaña 11', 'Cabaña 12', 'Cabaña 13', 'Cabaña 14', 'Cabaña 15', 'Cabaña 16', 'Cabaña 17', 'Cabaña 19'],
+                datasets: [{
+                    label: 'Revenue 2024 (USD)',
+                    data: [10809, 19713, 16374, 17856, 15422, 20457, 14201, 12301, 16512, 10518, 16096, 22130, 14368, 12282, 15449, 16721, 8338, 0],
+                    backgroundColor: [
+                        '#8B4513', '#A0522D', '#CD853F', '#D2691E', '#B8860B', '#DAA520', '#F4A460', '#DEB887', '#F5DEB3', '#D2B48C', '#BC8F8F', '#E6BE8A', '#F5F5DC', '#FDF5E6', '#FFEFD5', '#FFE4B5', '#FFDAB9', '#F0E68C'
+                    ],
+                    borderColor: [
+                        '#654321', '#8B4513', '#A0522D', '#CD853F', '#D2691E', '#B8860B', '#DAA520', '#F4A460', '#DEB887', '#F5DEB3', '#D2B48C', '#BC8F8F', '#E6BE8A', '#F5F5DC', '#FDF5E6', '#FFEFD5', '#FFE4B5', '#FFDAB9'
+                    ],
+                    borderWidth: 2
+                }]
+            };
+
+            // Configuración de la gráfica
+            const config = {
+                type: 'bar',
+                data: cabinData,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Revenue 2024 por Cabaña',
+                            font: {
+                                size: 18,
+                                family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif'
+                            },
+                            color: '#2c5530'
+                        },
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Revenue 2024 (USD)',
+                                font: {
+                                    size: 14,
+                                    family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif'
+                                },
+                                color: '#2c5530'
+                            },
+                            grid: {
+                                color: '#e0e0e0'
+                            },
+                            ticks: {
+                                color: '#2c5530'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Cabañas',
+                                font: {
+                                    size: 14,
+                                    family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif'
+                                },
+                                color: '#2c5530'
+                            },
+                            grid: {
+                                color: '#e0e0e0'
+                            },
+                            ticks: {
+                                color: '#2c5530',
+                                maxRotation: 45,
+                                minRotation: 45
+                            }
+                        }
+                    }
+                }
+            };
+
+            // Crear la gráfica
+            const ctx = document.getElementById('revenueChart').getContext('2d');
+            new Chart(ctx, config);
         });
     </script>
 </body>

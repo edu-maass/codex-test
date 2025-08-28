@@ -92,7 +92,7 @@
                                 <span class="kpi-label">Ocupación 2024</span>
                             </div>
                             <div class="kpi-stat">
-                                <span class="kpi-value">9.3%</span>
+                                <span class="kpi-value">18.2%</span>
                                 <span class="kpi-label">Ocupación 2025</span>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                                 <span class="kpi-label">Ocupación 2024</span>
                             </div>
                             <div class="kpi-stat">
-                                <span class="kpi-value">7.8%</span>
+                                <span class="kpi-value">16.4%</span>
                                 <span class="kpi-label">Ocupación 2025</span>
                             </div>
                         </div>
@@ -142,7 +142,7 @@
                                 <span class="kpi-label">Ocupación 2024</span>
                             </div>
                             <div class="kpi-stat">
-                                <span class="kpi-value">11.5%</span>
+                                <span class="kpi-value">19.3%</span>
                                 <span class="kpi-label">Ocupación 2025</span>
                             </div>
                         </div>
@@ -167,7 +167,7 @@
                                 <span class="kpi-label">Ocupación 2024</span>
                             </div>
                             <div class="kpi-stat">
-                                <span class="kpi-value">18.9%</span>
+                                <span class="kpi-value">31.8%</span>
                                 <span class="kpi-label">Ocupación 2025</span>
                             </div>
                         </div>
@@ -192,7 +192,7 @@
                                 <span class="kpi-label">Ocupación 2024</span>
                             </div>
                             <div class="kpi-stat">
-                                <span class="kpi-value">5.4%</span>
+                                <span class="kpi-value">12.7%</span>
                                 <span class="kpi-label">Ocupación 2025</span>
                             </div>
                         </div>
@@ -248,7 +248,7 @@
                     <div class="metric-label">Ocupación 2024</div>
                 </div>
                 <div class="metric-card">
-                    <div class="metric-value">12.3%</div>
+                    <div class="metric-value">20.7%</div>
                     <div class="metric-label">Ocupación 2025</div>
                 </div>
                 <div class="metric-card">
@@ -1416,28 +1416,28 @@
                 datasets: [
                     {
                         label: 'Cabañas Sencillas',
-                        data: [22.1, 7.9, 20.0, 13.3, 29.7, 17.3, 19.7, 27.3, 32.7, 25.8, 33.3, 30.0, 20.9, 19.1, 18.2, 12.7, 14.5, 19.1, 8.2],
+                        data: [23.5, 10.5, 21.3, 14.2, 31.6, 18.4, 19.1, 26.4, 31.7, 24.9, 32.3, 29.0, 20.2, 20.3, 19.4, 15.1, 19.4, 18.5, 12.4],
                         borderColor: '#A0522D',
                         backgroundColor: 'rgba(160, 82, 45, 0.1)',
                         tension: 0.4
                     },
                     {
                         label: 'Cabañas Dobles',
-                        data: [2.9, 1.2, 17.9, 16.2, 24.2, 12.9, 20.4, 29.6, 19.2, 15.0, 11.7, 11.2, 10.4, 10.4, 22.5, 9.6, 17.1, 16.7, 8.8],
+                        data: [3.8, 4.8, 23.1, 18.0, 26.7, 14.3, 22.6, 32.7, 21.2, 16.6, 12.9, 14.5, 11.5, 11.5, 24.9, 12.4, 18.9, 18.4, 16.9],
                         borderColor: '#CD853F',
                         backgroundColor: 'rgba(205, 133, 63, 0.1)',
                         tension: 0.4
                     },
                     {
                         label: 'Cabañas Viñedo',
-                        data: [12.7, 16.7, 20.7, 25.3, 30.7, 21.0, 17.3, 21.0, 31.3, 31.7, 34.7, 22.7, 14.0, 16.3, 21.7, 18.0, 31.7, 24.7, 13.0],
+                        data: [12.3, 16.1, 22.2, 24.5, 29.7, 20.3, 16.8, 20.3, 30.3, 30.6, 33.5, 21.9, 13.5, 15.8, 21.0, 17.4, 30.6, 23.9, 12.6],
                         borderColor: '#8FBC8F',
                         backgroundColor: 'rgba(143, 188, 143, 0.1)',
                         tension: 0.4
                     },
                     {
                         label: 'Pool Suite',
-                        data: [13.3, 43.3, 30.0, 26.7, 33.3, 40.0, 40.0, 40.0, 60.0, 23.3, 50.0, 13.3, 33.3, 30.0, 33.3, 33.3, 36.7, 30.0, 33.3],
+                        data: [12.9, 41.9, 29.0, 25.8, 32.3, 38.7, 38.7, 38.7, 58.1, 22.6, 48.4, 12.9, 32.3, 29.0, 32.3, 32.3, 35.5, 29.0, 32.3],
                         borderColor: '#4682B4',
                         backgroundColor: 'rgba(70, 130, 180, 0.1)',
                         tension: 0.4
@@ -1496,41 +1496,41 @@
             const ocupacionCtx = document.getElementById('ocupacionChart').getContext('2d');
             new Chart(ocupacionCtx, ocupacionConfig);
             
-            // Gráfica de barras para ADR anual por tipo
+            // Gráfica de barras para ADR anual por tipo (promedios)
             const adrData = {
                 labels: ['2024', '2025'],
                 datasets: [
                     {
                         label: 'Cabañas Sencillas',
-                        data: [64460.88, 37504.26],
+                        data: [3972.41, 2722.01],
                         backgroundColor: '#A0522D',
                         borderColor: '#8B4513',
                         borderWidth: 2
                     },
                     {
                         label: 'Cabañas Dobles',
-                        data: [59715.72, 55063.62],
+                        data: [4187.46, 3961.22],
                         backgroundColor: '#CD853F',
                         borderColor: '#B8860B',
                         borderWidth: 2
                     },
                     {
                         label: 'Cabañas Viñedo',
-                        data: [92829.60, 79544.16],
+                        data: [5163.71, 4425.83],
                         backgroundColor: '#8FBC8F',
                         borderColor: '#228B22',
                         borderWidth: 2
                     },
                     {
                         label: 'Pool Suite',
-                        data: [151668.90, 133622.82],
+                        data: [8208.85, 7488.33],
                         backgroundColor: '#4682B4',
                         borderColor: '#4169E1',
                         borderWidth: 2
                     },
                     {
                         label: 'Residences',
-                        data: [205558.74, 425435.22],
+                        data: [29729.28, 24388.13],
                         backgroundColor: '#DDA0DD',
                         borderColor: '#DA70D6',
                         borderWidth: 2
@@ -1560,7 +1560,7 @@
                             beginAtZero: true,
                             title: {
                                 display: true,
-                                text: 'ADR (MXN)',
+                                text: 'ADR (USD)',
                                 color: '#8B4513'
                             },
                             grid: { color: '#e0e0e0' },
@@ -1588,35 +1588,35 @@
                 datasets: [
                     {
                         label: 'Cabañas Sencillas',
-                        data: [24.8, 30.4],
+                        data: [24.8, 18.2],
                         backgroundColor: '#A0522D',
                         borderColor: '#8B4513',
                         borderWidth: 2
                     },
                     {
                         label: 'Cabañas Dobles',
-                        data: [19.2, 28.1],
+                        data: [19.2, 16.4],
                         backgroundColor: '#CD853F',
                         borderColor: '#B8860B',
                         borderWidth: 2
                     },
                     {
                         label: 'Cabañas Viñedo',
-                        data: [24.0, 29.9],
+                        data: [24.0, 19.3],
                         backgroundColor: '#8FBC8F',
                         borderColor: '#228B22',
                         borderWidth: 2
                     },
                     {
                         label: 'Pool Suite',
-                        data: [34.4, 41.2],
+                        data: [34.4, 31.8],
                         backgroundColor: '#4682B4',
                         borderColor: '#4169E1',
                         borderWidth: 2
                     },
                     {
                         label: 'Residences',
-                        data: [20.0, 36.5],
+                        data: [20.0, 12.7],
                         backgroundColor: '#DDA0DD',
                         borderColor: '#DA70D6',
                         borderWidth: 2

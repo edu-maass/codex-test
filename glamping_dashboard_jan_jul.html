@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>44 Glamping - Dashboard Enero-Julio 2024 vs 2025</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { text-align: center; background: linear-gradient(135deg, #8B4513, #A0522D); color: white; padding: 30px; border-radius: 15px; margin-bottom: 30px; }
+        .header h1 { margin: 0; font-size: 2.5em; }
+        .header p { margin: 10px 0 0 0; font-size: 1.2em; opacity: 0.9; }
+        .kpis-container { margin-bottom: 30px; }
+        .kpi-section h3 { text-align: center; color: #8B4513; margin-bottom: 20px; font-size: 1.5em; }
+        .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .kpi-card { background: white; border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 4px solid; }
+        .kpi-card.sencilla { border-top-color: #A0522D; }
+        .kpi-card.doble { border-top-color: #CD853F; }
+        .kpi-card.vinedo { border-top-color: #8FBC8F; }
+        .kpi-card.pool { border-top-color: #4682B4; }
+        .kpi-card.residence { border-top-color: #DDA0DD; }
+        .kpi-card h4 { margin: 0 0 20px 0; color: #8B4513; font-size: 1.3em; text-align: center; }
+        .kpi-stats { display: flex; flex-direction: column; gap: 15px; }
+        .kpi-stat { text-align: center; }
+        .kpi-value { display: block; font-size: 1.4em; font-weight: bold; color: #8B4513; margin-bottom: 5px; }
+        .kpi-label { font-size: 0.9em; color: #666; text-transform: uppercase; letter-spacing: 0.5px; }
+        
+        /* Estilos para las gráficas del dashboard */
+        .charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 25px; margin-top: 30px; }
+        .chart-card { background: white; border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .chart-card h4 { margin: 0 0 20px 0; color: #8B4513; font-size: 1.2em; text-align: center; }
+        .chart-container { background: white; border-radius: 15px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏕️ 44 Glamping</h1>
+            <p>Dashboard Comparativo - Enero a Julio 2024 vs 2025</p>
+        </div>
+
+        <!-- KPIs por Tipo de Habitación -->
+        <div class="kpis-container">
+            <div class="kpi-section">
+                <h3>📊 KPIs por Tipo de Habitación (Enero-Julio)</h3>
+                <div class="kpi-grid">
+                    <!-- Cabañas Sencillas -->
+                    <div class="kpi-card sencilla">
+                        <h4>🏠 Cabañas Sencillas</h4>
+                        <div class="kpi-stats">
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$1,718,980</span>
+                                <span class="kpi-label">Revenue 2024 (MXN)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$803,060</span>
+                                <span class="kpi-label">Revenue 2025 (MXN)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$4,336</span>
+                                <span class="kpi-label">ADR 2024 (USD)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$2,722</span>
+                                <span class="kpi-label">ADR 2025 (USD)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">18.0%</span>
+                                <span class="kpi-label">Ocupación 2024</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">15.6%</span>
+                                <span class="kpi-label">Ocupación 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cabañas Dobles -->
+                    <div class="kpi-card doble">
+                        <h4>🏠🏠 Cabañas Dobles</h4>
+                        <div class="kpi-stats">
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$973,933</span>
+                                <span class="kpi-label">Revenue 2024 (MXN)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$635,978</span>
+                                <span class="kpi-label">Revenue 2025 (MXN)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$4,330</span>
+                                <span class="kpi-label">ADR 2024 (USD)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$3,961</span>
+                                <span class="kpi-label">ADR 2025 (USD)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">13.2%</span>
+                                <span class="kpi-label">Ocupación 2024</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">13.2%</span>
+                                <span class="kpi-label">Ocupación 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cabañas Viñedo -->
+                    <div class="kpi-card vinedo">
+                        <h4>🍇 Cabañas Viñedo</h4>
+                        <div class="kpi-stats">
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$2,345,429</span>
+                                <span class="kpi-label">Revenue 2024 (MXN)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$1,951,469</span>
+                                <span class="kpi-label">Revenue 2025 (MXN)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$5,233</span>
+                                <span class="kpi-label">ADR 2024 (USD)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$4,426</span>
+                                <span class="kpi-label">ADR 2025 (USD)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">20.0%</span>
+                                <span class="kpi-label">Ocupación 2024</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">19.3%</span>
+                                <span class="kpi-label">Ocupación 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pool Suite -->
+                    <div class="kpi-card pool">
+                        <h4>🏊 Pool Suite</h4>
+                        <div class="kpi-stats">
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$565,159</span>
+                                <span class="kpi-label">Revenue 2024 (MXN)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$522,249</span>
+                                <span class="kpi-label">Revenue 2025 (MXN)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$8,405</span>
+                                <span class="kpi-label">ADR 2024 (USD)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$7,488</span>
+                                <span class="kpi-label">ADR 2025 (USD)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">31.3%</span>
+                                <span class="kpi-label">Ocupación 2024</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">31.8%</span>
+                                <span class="kpi-label">Ocupación 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Residences -->
+                    <div class="kpi-card residence">
+                        <h4>🏰 Residences</h4>
+                        <div class="kpi-stats">
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$591,805</span>
+                                <span class="kpi-label">Revenue 2024 (MXN)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$2,409,694</span>
+                                <span class="kpi-label">Revenue 2025 (MXN)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$12,267</span>
+                                <span class="kpi-label">ADR 2024 (USD)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">$24,388</span>
+                                <span class="kpi-label">ADR 2025 (USD)</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">10.3%</span>
+                                <span class="kpi-label">Ocupación 2024</span>
+                            </div>
+                            <div class="kpi-stat">
+                                <span class="kpi-value">9.1%</span>
+                                <span class="kpi-label">Ocupación 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gráficas del Dashboard -->
+        <div class="charts-grid">
+            <!-- Revenue Chart -->
+            <div class="chart-card">
+                <h4>💰 Revenue Enero-Julio por Tipo</h4>
+                <canvas id="revenueJanJulChart"></canvas>
+            </div>
+
+            <!-- ADR Chart -->
+            <div class="chart-card">
+                <h4>💵 ADR Promedio Enero-Julio por Tipo</h4>
+                <canvas id="adrJanJulChart"></canvas>
+            </div>
+
+            <!-- Occupancy Chart -->
+            <div class="chart-card">
+                <h4>📈 Ocupación Promedio Enero-Julio por Tipo</h4>
+                <canvas id="occupancyJanJulChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Revenue Chart (Enero-Julio)
+        const revenueJanJulData = {
+            labels: ['2024', '2025'],
+            datasets: [
+                {
+                    label: 'Cabañas Sencillas',
+                    data: [1718979.62, 803060.45],
+                    backgroundColor: '#A0522D',
+                    borderColor: '#8B4513',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Cabañas Dobles',
+                    data: [973932.9, 635977.53],
+                    backgroundColor: '#CD853F',
+                    borderColor: '#B8860B',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Cabañas Viñedo',
+                    data: [2345429.15, 1951468.52],
+                    backgroundColor: '#8FBC8F',
+                    borderColor: '#228B22',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Pool Suite',
+                    data: [565159.2, 522249.36],
+                    backgroundColor: '#4682B4',
+                    borderColor: '#4169E1',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Residences',
+                    data: [591804.93, 2409694.24],
+                    backgroundColor: '#DDA0DD',
+                    borderColor: '#DA70D6',
+                    borderWidth: 2
+                }
+            ]
+        };
+
+        const revenueJanJulConfig = {
+            type: 'bar',
+            data: revenueJanJulData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: { color: '#8B4513', font: { size: 12 } }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Revenue Enero-Julio por Tipo (MXN)',
+                        color: '#8B4513',
+                        font: { size: 16, weight: 'bold' }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Revenue (MXN)',
+                            color: '#8B4513'
+                        },
+                        grid: { color: '#e0e0e0' },
+                        ticks: { color: '#8B4513' }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Año',
+                            color: '#8B4513'
+                        },
+                        grid: { color: '#e0e0e0' },
+                        ticks: { color: '#8B4513' }
+                    }
+                }
+            }
+        };
+
+        const revenueJanJulCtx = document.getElementById('revenueJanJulChart').getContext('2d');
+        new Chart(revenueJanJulCtx, revenueJanJulConfig);
+
+        // ADR Chart (Enero-Julio)
+        const adrJanJulData = {
+            labels: ['2024', '2025'],
+            datasets: [
+                {
+                    label: 'Cabañas Sencillas',
+                    data: [4335.6, 2722.01],
+                    backgroundColor: '#A0522D',
+                    borderColor: '#8B4513',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Cabañas Dobles',
+                    data: [4329.51, 3961.22],
+                    backgroundColor: '#CD853F',
+                    borderColor: '#B8860B',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Cabañas Viñedo',
+                    data: [5232.61, 4425.83],
+                    backgroundColor: '#8FBC8F',
+                    borderColor: '#228B22',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Pool Suite',
+                    data: [8404.86, 7488.33],
+                    backgroundColor: '#4682B4',
+                    borderColor: '#4169E1',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Residences',
+                    data: [12266.82, 24388.13],
+                    backgroundColor: '#DDA0DD',
+                    borderColor: '#DA70D6',
+                    borderWidth: 2
+                }
+            ]
+        };
+
+        const adrJanJulConfig = {
+            type: 'bar',
+            data: adrJanJulData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: { color: '#8B4513', font: { size: 12 } }
+                    },
+                    title: {
+                        display: true,
+                        text: 'ADR Promedio Enero-Julio por Tipo (USD)',
+                        color: '#8B4513',
+                        font: { size: 16, weight: 'bold' }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'ADR (USD)',
+                            color: '#8B4513'
+                        },
+                        grid: { color: '#e0e0e0' },
+                        ticks: { color: '#8B4513' }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Año',
+                            color: '#8B4513'
+                        },
+                        grid: { color: '#e0e0e0' },
+                        ticks: { color: '#8B4513' }
+                    }
+                }
+            }
+        };
+
+        const adrJanJulCtx = document.getElementById('adrJanJulChart').getContext('2d');
+        new Chart(adrJanJulCtx, adrJanJulConfig);
+
+        // Occupancy Chart (Enero-Julio)
+        const occupancyJanJulData = {
+            labels: ['2024', '2025'],
+            datasets: [
+                {
+                    label: 'Cabañas Sencillas',
+                    data: [18.0, 15.6],
+                    backgroundColor: '#A0522D',
+                    borderColor: '#8B4513',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Cabañas Dobles',
+                    data: [13.2, 13.2],
+                    backgroundColor: '#CD853F',
+                    borderColor: '#B8860B',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Cabañas Viñedo',
+                    data: [20.0, 19.3],
+                    backgroundColor: '#8FBC8F',
+                    borderColor: '#228B22',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Pool Suite',
+                    data: [31.3, 31.8],
+                    backgroundColor: '#4682B4',
+                    borderColor: '#4169E1',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Residences',
+                    data: [10.3, 9.1],
+                    backgroundColor: '#DDA0DD',
+                    borderColor: '#DA70D6',
+                    borderWidth: 2
+                }
+            ]
+        };
+
+        const occupancyJanJulConfig = {
+            type: 'bar',
+            data: occupancyJanJulData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: { color: '#8B4513', font: { size: 12 } }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Ocupación Promedio Enero-Julio por Tipo (%)',
+                        color: '#8B4513',
+                        font: { size: 16, weight: 'bold' }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 35,
+                        title: {
+                            display: true,
+                            text: 'Ocupación (%)',
+                            color: '#8B4513'
+                        },
+                        grid: { color: '#e0e0e0' },
+                        ticks: { color: '#8B4513' }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Año',
+                            color: '#8B4513'
+                        },
+                        grid: { color: '#e0e0e0' },
+                        ticks: { color: '#8B4513' }
+                    }
+                }
+            }
+        };
+
+        const occupancyJanJulCtx = document.getElementById('occupancyJanJulChart').getContext('2d');
+        new Chart(occupancyJanJulCtx, occupancyJanJulConfig);
+    </script>
+</body>
+</html>

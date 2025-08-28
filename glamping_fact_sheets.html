@@ -213,13 +213,17 @@
                         <h4>💰 ADR Mensual por Tipo</h4>
                         <canvas id="adrChart"></canvas>
                     </div>
+                    <div class="chart-card">
+                        <h4>🏨 Ocupación Promedio por Tipo</h4>
+                        <canvas id="occupancyAnnualChart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Gráfica de Revenue 2024 -->
         <div class="chart-container">
-            <h3 style="text-align: center; color: #8B4513; margin-bottom: 20px;">📊 Revenue 2024 por Cabaña (MXN)</h3>
+            <h3 style="text-align: center; color: #8B4513; margin-bottom: 20px;">📊 Revenue 2024 por Cabaña Individual (MXN)</h3>
             <canvas id="revenueChart"></canvas>
         </div>
 
@@ -1290,11 +1294,11 @@
         document.addEventListener('DOMContentLoaded', function() {
             console.log('Glamping Fact Sheets loaded successfully');
             
-            // Datos para la gráfica de barras
+            // Datos para la gráfica de barras por cabaña individual
             const cabinData = {
                 labels: ['Cabaña 1 (Sencilla)', 'Cabaña 2 (Sencilla)', 'Cabaña 3 (Sencilla)', 'Cabaña 4 (Sencilla)', 'Cabaña 5 (Sencilla)', 'Cabaña 6 (Sencilla)', 'Cabaña 7 (Sencilla)', 'Cabaña 8 (Sencilla)', 'Cabaña 9 (Sencilla)', 'Cabaña 10 (Sencilla)', 'Cabaña 11 (Sencilla)', 'Cabaña 12 (Doble)', 'Cabaña 13 (Doble)', 'Cabaña 14 (Doble)', 'Cabaña 15 (Doble)', 'Cabaña 16 (Doble)', 'Cabaña 17 (Doble)', 'Cabaña 18 (Doble)', 'Cabaña 19 (Doble)', 'Cabaña 20 (Viñedo)', 'Cabaña 21 (Viñedo)', 'Cabaña 22 (Viñedo)', 'Cabaña 23 (Viñedo)', 'Cabaña 24 (Viñedo)', 'Cabaña 25 (Viñedo)', 'Cabaña 26 (Viñedo)', 'Cabaña 27 (Viñedo)', 'Cabaña 28 (Viñedo)', 'Cabaña 29 (Viñedo)', 'Cabaña 30 (Pool Suite)', 'Cabaña 32 (Residence III)', 'Cabaña 33 (Residence I)', 'Cabaña 34 (Residence II)'],
                 datasets: [{
-                    label: 'Revenue 2024 (MXN)',
+                    label: 'Revenue 2024 por Cabaña (MXN)',
                     data: [197021.86, 353440.32, 292662.02, 318613.02, 282551.91, 365498.74, 260525.45, 224386.62, 305854.68, 203478.08, 291934.79, 404717.17, 261457.73, 225355.20, 282439.33, 295997.95, 155971.86, 162721.38, 0, 516001.69, 393014.87, 440179.95, 339201.81, 743775.94, 338760.68, 348576.20, 438675.47, 523534.81, 404374.84, 986012.97, 274877.16, 1449132.56, 1652080.02],
                     backgroundColor: [
                         '#8B4513', '#A0522D', '#CD853F', '#D2691E', '#B8860B', '#DAA520', '#F4A460', '#DEB887', '#F5DEB3', '#D2B48C', '#BC8F8F', '#E6BE8A', '#F5F5DC', '#FDF5E6', '#FFEFD5', '#FFE4B5', '#FFDAB9', '#F0E68C', '#98FB98', '#32CD32', '#228B22', '#006400', '#90EE90', '#98FB98', '#32CD32', '#228B22', '#006400', '#90EE90', '#4682B4', '#DDA0DD', '#DDA0DD', '#DDA0DD'
@@ -1315,7 +1319,7 @@
                     plugins: {
                         title: {
                             display: true,
-                            text: 'Revenue 2024 por Cabaña (MXN)',
+                            text: 'Revenue 2024 por Cabaña Individual (MXN)',
                             font: {
                                 size: 18,
                                 family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif'
@@ -1331,7 +1335,7 @@
                             beginAtZero: true,
                             title: {
                                 display: true,
-                                text: 'Revenue 2024 (MXN)',
+                                text: 'Revenue 2024 por Cabaña (MXN)',
                                 font: {
                                     size: 14,
                                     family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif'
@@ -1492,50 +1496,50 @@
             const ocupacionCtx = document.getElementById('ocupacionChart').getContext('2d');
             new Chart(ocupacionCtx, ocupacionConfig);
             
-            // Gráfica de líneas para ADR mensual por tipo
+            // Gráfica de barras para ADR anual por tipo
             const adrData = {
-                labels: ['01/24', '02/24', '03/24', '04/24', '05/24', '06/24', '07/24', '08/24', '09/24', '10/24', '11/24', '12/24', '01/25', '02/25', '03/25', '04/25', '05/25', '06/25', '07/25'],
+                labels: ['2024', '2025'],
                 datasets: [
                     {
                         label: 'Cabañas Sencillas',
-                        data: [2451.52, 2910.55, 2748.76, 3782.57, 3838.30, 4999.43, 5676.61, 4189.14, 2485.42, 4895.07, 2738.39, 2258.50, 1039.68, 2370.90, 648.45, 1881.42, 2887.81, 3693.10, 2078.53],
-                        borderColor: '#A0522D',
-                        backgroundColor: 'rgba(160, 82, 45, 0.1)',
-                        tension: 0.4
+                        data: [64460.88, 37504.26],
+                        backgroundColor: '#A0522D',
+                        borderColor: '#8B4513',
+                        borderWidth: 2
                     },
                     {
                         label: 'Cabañas Dobles',
-                        data: [2407.62, 475.00, 2914.49, 2252.46, 4134.96, 5027.10, 4435.92, 3605.79, 3425.80, 4392.02, 2623.59, 2515.82, 2377.34, 2570.86, 1224.26, 7378.95, 3394.07, 3394.20, 1447.06],
-                        borderColor: '#CD853F',
-                        backgroundColor: 'rgba(205, 133, 63, 0.1)',
-                        tension: 0.4
+                        data: [59715.72, 55063.62],
+                        backgroundColor: '#CD853F',
+                        borderColor: '#B8860B',
+                        borderWidth: 2
                     },
                     {
                         label: 'Cabañas Viñedo',
-                        data: [3694.97, 4419.18, 3919.19, 6892.55, 5262.42, 6420.93, 5495.76, 5471.70, 5334.80, 5798.32, 4991.58, 3746.83, 2703.98, 3694.39, 4636.10, 4786.94, 5411.35, 4737.41, 4125.44],
-                        borderColor: '#8FBC8F',
-                        backgroundColor: 'rgba(143, 188, 143, 0.1)',
-                        tension: 0.4
+                        data: [92829.60, 79544.16],
+                        backgroundColor: '#8FBC8F',
+                        borderColor: '#228B22',
+                        borderWidth: 2
                     },
                     {
                         label: 'Pool Suite',
-                        data: [10176.99, 7523.80, 6280.84, 7602.51, 8852.17, 10345.19, 8052.51, 9290.37, 6887.21, 10447.64, 5461.64, 7585.36, 6041.71, 6221.40, 5311.47, 10079.57, 10879.06, 6591.32, 7293.77],
-                        borderColor: '#4682B4',
-                        backgroundColor: 'rgba(70, 130, 180, 0.1)',
-                        tension: 0.4
+                        data: [151668.90, 133622.82],
+                        backgroundColor: '#4682B4',
+                        borderColor: '#4169E1',
+                        borderWidth: 2
                     },
                     {
                         label: 'Residences',
-                        data: [0.00, 10968.49, 12743.36, 7620.73, 11596.90, 15788.78, 11575.13, 17570.93, 7561.74, 17153.72, 8000.00, 115474.57, 19713.23, 18586.47, 17761.48, 59154.75, 12181.92, 13360.62, 8410.62],
-                        borderColor: '#DDA0DD',
-                        backgroundColor: 'rgba(221, 160, 221, 0.1)',
-                        tension: 0.4
+                        data: [205558.74, 425435.22],
+                        backgroundColor: '#DDA0DD',
+                        borderColor: '#DA70D6',
+                        borderWidth: 2
                     }
                 ]
             };
             
             const adrConfig = {
-                type: 'line',
+                type: 'bar',
                 data: adrData,
                 options: {
                     responsive: true,
@@ -1556,7 +1560,7 @@
                             beginAtZero: true,
                             title: {
                                 display: true,
-                                text: 'ADR (USD)',
+                                text: 'ADR (MXN)',
                                 color: '#8B4513'
                             },
                             grid: { color: '#e0e0e0' },
@@ -1565,7 +1569,7 @@
                         x: {
                             title: {
                                 display: true,
-                                text: 'Mes',
+                                text: 'Año',
                                 color: '#8B4513'
                             },
                             grid: { color: '#e0e0e0' },
@@ -1577,6 +1581,92 @@
             
             const adrCtx = document.getElementById('adrChart').getContext('2d');
             new Chart(adrCtx, adrConfig);
+            
+            // Gráfica de barras para ocupación anual por tipo
+            const occupancyAnnualData = {
+                labels: ['2024', '2025'],
+                datasets: [
+                    {
+                        label: 'Cabañas Sencillas',
+                        data: [24.8, 30.4],
+                        backgroundColor: '#A0522D',
+                        borderColor: '#8B4513',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Cabañas Dobles',
+                        data: [19.2, 28.1],
+                        backgroundColor: '#CD853F',
+                        borderColor: '#B8860B',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Cabañas Viñedo',
+                        data: [24.0, 29.9],
+                        backgroundColor: '#8FBC8F',
+                        borderColor: '#228B22',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Pool Suite',
+                        data: [34.4, 41.2],
+                        backgroundColor: '#4682B4',
+                        borderColor: '#4169E1',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Residences',
+                        data: [20.0, 36.5],
+                        backgroundColor: '#DDA0DD',
+                        borderColor: '#DA70D6',
+                        borderWidth: 2
+                    }
+                ]
+            };
+            
+            const occupancyAnnualConfig = {
+                type: 'bar',
+                data: occupancyAnnualData,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                color: '#8B4513',
+                                font: {
+                                    size: 12,
+                                    family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif'
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Ocupación (%)',
+                                color: '#8B4513'
+                            },
+                            grid: { color: '#e0e0e0' },
+                            ticks: { color: '#8B4513' }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Año',
+                                color: '#8B4513'
+                            },
+                            grid: { color: '#e0e0e0' },
+                            ticks: { color: '#8B4513' }
+                        }
+                    }
+                }
+            };
+            
+            const occupancyAnnualCtx = document.getElementById('occupancyAnnualChart').getContext('2d');
+            new Chart(occupancyAnnualCtx, occupancyAnnualConfig);
         });
     </script>
 </body>
